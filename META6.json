@@ -1,0 +1,21 @@
+{
+  "authors" : [
+    "Takumi Akiyama"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "Human JSON (Hjson) deserializer",
+  "name" : "JSON::HJSON",
+  "perl" : "6.c",
+  "provides" : {
+    "JSON::HJSON" : "lib/JSON/HJSON.pm6",
+    "JSON::Hjson::Actions" : "lib/JSON/Hjson/Actions.pm6",
+    "JSON::Hjson::Grammar" : "lib/JSON/Hjson/Grammar.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "",
+  "test-depends" : [
+    "JSON::Tiny"
+  ],
+  "version" : "*"
+}
