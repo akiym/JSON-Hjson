@@ -15,7 +15,8 @@
   "resources" : [ ],
   "source-url" : "git://github.com/akiym/JSON-Hjson.git",
   "test-depends" : [
-    "JSON::Tiny"
+    "JSON::Tiny",
+    "Test::META"
   ],
   "version" : "*"
 }
