@@ -35,12 +35,12 @@ method string:sym<multiline-string>($/) {
     $o.=subst(/^ "'''" <[\x20\t\r]>* \n?/, '');
     $o.=subst(/\n? <[\x20\t\r]>* "'''" $/, '');
 
-    my sub trim_indent($o, $after) {
+    my sub trim-indent($o, $after) {
         my $indent = $after.subst(/.*\n/, '').chars;
         # XXX subst overwrites $/
         return $o.subst(/^^ \s ** {$indent}/, '', :g);
     }
-    make trim_indent($o, $/.prematch);
+    make trim-indent($o, $/.prematch);
 }
 method string:sym<quoteless-string>($/) { make ~$/ }
 
@@ -60,9 +60,9 @@ my %h = '\\' => "\\",
         'f'  => "\f",
         'r'  => "\r",
         '"'  => "\"";
-method str_escape($/) {
-    if $<utf16_codepoint> {
-        make utf16.new( $<utf16_codepoint>.map({:16(~$_)}) ).decode();
+method str-escape($/) {
+    if $<utf16-codepoint> {
+        make utf16.new( $<utf16-codepoint>.map({:16(~$_)}) ).decode();
     } else {
         make %h{~$/};
     }
