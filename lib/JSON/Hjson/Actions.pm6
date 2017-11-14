@@ -31,16 +31,19 @@ method value:sym<string>($/) { make $<string>.made }
 
 method string:sym<json-string>($/)      { make $<json-string>.made }
 method string:sym<multiline-string>($/) {
-    my $o = ~$/;
-    $o.=subst(/^ "'''" <[\x20\t\r]>* \n?/, '');
-    $o.=subst(/\n? <[\x20\t\r]>* "'''" $/, '');
+    my sub trim-seq(Str() $s) {
+        my $o = $s;
+        $o.=subst(/^ "'''" <[\x20\t\r]>* \n?/, '');
+        $o.=subst(/\n? <[\x20\t\r]>* "'''" $/, '');
+        return $o;
+    }
 
     my sub trim-indent($o, $after) {
         my $indent = $after.subst(/.*\n/, '').chars;
         # XXX subst overwrites $/
         return $o.subst(/^^ \s ** {$indent}/, '', :g);
     }
-    make trim-indent($o, $/.prematch);
+    make trim-indent(trim-seq(~$/), $/.prematch);
 }
 method string:sym<quoteless-string>($/) { make ~$/ }
 
