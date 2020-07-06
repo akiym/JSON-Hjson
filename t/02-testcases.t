@@ -1,7 +1,7 @@
 use v6;
 use Test;
 use JSON::Hjson;
-use JSON::Tiny;
+use JSON::Fast;
 
 my @files = dir('t/testCases').grep: /_test\.h?json$/;
 for @files -> $f {
