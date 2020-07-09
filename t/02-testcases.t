@@ -16,7 +16,7 @@ for @files -> $f {
         # XXX Prefer not to use `is-deeply` due to rational number comparison
         #     (See also t/testCases/pass1_test.json)
         # is-deeply $got, $expected, $name;
-        cmp-ok $got.perl, 'eq', $expected.perl, $name;
+        cmp-ok $got.raku, 'eq', $expected.raku, $name;
     }
 }
 
@@ -24,10 +24,10 @@ sub coerce-numeric($a) {
     given $a.WHAT {
         when Numeric {
             my $retval = $a;
-            if $retval.WHAT === Num && $retval.perl ~~ /e0$/ {
+            if $retval.WHAT === Num && $retval.raku ~~ /e0$/ {
                 $retval = $retval.Rat;
             }
-            if $retval.WHAT === Rat && $retval.perl ~~ /\.0$/ {
+            if $retval.WHAT === Rat && $retval.raku ~~ /\.0$/ {
                 $retval = $retval.Int;
             }
             return $retval;

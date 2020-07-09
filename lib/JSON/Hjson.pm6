@@ -36,11 +36,11 @@ JSON::Hjson - Human JSON (Hjson) deserializer
     message: wake up!
   }
   ...
-  say from-hjson($text).perl;
+  say from-hjson($text).raku;
 
 =head1 DESCRIPTION
 
-JSON::Hjson implements Human JSON (Hjson) in Perl6 grammar.
+JSON::Hjson implements Human JSON (Hjson) in Raku grammar.
 
 =head1 SEE ALSO
 
