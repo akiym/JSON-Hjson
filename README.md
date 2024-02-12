@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/akiym/JSON-Hjson/actions/workflows/test.yml/badge.svg)](https://github.com/akiym/JSON-Hjson/actions)
+
 NAME
 ====
 
