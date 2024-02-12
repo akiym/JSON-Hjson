@@ -7,11 +7,11 @@
   "description" : "Human JSON (Hjson) deserializer",
   "license" : "Artistic-2.0",
   "name" : "JSON::Hjson",
-  "perl" : "6.c",
+  "perl" : "6.d",
   "provides" : {
-    "JSON::Hjson" : "lib/JSON/Hjson.pm6",
-    "JSON::Hjson::Actions" : "lib/JSON/Hjson/Actions.pm6",
-    "JSON::Hjson::Grammar" : "lib/JSON/Hjson/Grammar.pm6"
+    "JSON::Hjson" : "lib/JSON/Hjson.rakumod",
+    "JSON::Hjson::Actions" : "lib/JSON/Hjson/Actions.rakumod",
+    "JSON::Hjson::Grammar" : "lib/JSON/Hjson/Grammar.rakumod"
   },
   "resources" : [ ],
   "source-url" : "git://github.com/akiym/JSON-Hjson.git",
