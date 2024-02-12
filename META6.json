@@ -25,5 +25,5 @@
     "JSON::Fast:ver<0.11+>",
     "Test::META"
   ],
-  "version": "0.0.2"
+  "version": "0.0.3"
 }

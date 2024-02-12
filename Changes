@@ -2,6 +2,10 @@ Revision history for JSON-Hjson
 
 {{$NEXT}}
 
+0.0.3  2024-02-13T00:33:22+09:00
+    - JSON::Hjson is now uploaded to Zef ecosystem
+    - Rename module filenames from *.pm6 to *.rakumod
+
 0.0.2  2020-07-09T09:15:32+09:00
     - Replace JSON::Tiny with JSON::Fast
 
