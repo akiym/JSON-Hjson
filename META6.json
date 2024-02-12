@@ -1,24 +1,28 @@
 {
-  "authors" : [
+  "authors": [
     "Takumi Akiyama"
   ],
-  "build-depends" : [ ],
-  "depends" : [ ],
-  "description" : "Human JSON (Hjson) deserializer",
-  "license" : "Artistic-2.0",
-  "name" : "JSON::Hjson",
-  "perl" : "6.d",
-  "provides" : {
-    "JSON::Hjson" : "lib/JSON/Hjson.rakumod",
-    "JSON::Hjson::Actions" : "lib/JSON/Hjson/Actions.rakumod",
-    "JSON::Hjson::Grammar" : "lib/JSON/Hjson/Grammar.rakumod"
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Human JSON (Hjson) deserializer",
+  "license": "Artistic-2.0",
+  "name": "JSON::Hjson",
+  "perl": "6.d",
+  "provides": {
+    "JSON::Hjson": "lib/JSON/Hjson.rakumod",
+    "JSON::Hjson::Actions": "lib/JSON/Hjson/Actions.rakumod",
+    "JSON::Hjson::Grammar": "lib/JSON/Hjson/Grammar.rakumod"
   },
-  "resources" : [ ],
-  "source-url" : "git://github.com/akiym/JSON-Hjson.git",
-  "tags" : [ ],
-  "test-depends" : [
+  "resources": [
+  ],
+  "source-url": "git://github.com/akiym/JSON-Hjson.git",
+  "tags": [
+  ],
+  "test-depends": [
     "JSON::Fast:ver<0.11+>",
     "Test::META"
   ],
-  "version" : "0.0.2"
+  "version": "0.0.2"
 }
