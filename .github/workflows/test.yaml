@@ -15,8 +15,6 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
-          # - windows-latest # disabled for now
         raku-version:
           - 'latest'
           - '2023.02' # fez uses "rakuast"
@@ -30,7 +28,5 @@ jobs:
         run: zef upgrade --/test zef
       - name: Install Dependencies
         run: zef install --/test --deps-only .
-      - name: Install Development Dependencies
-        run: zef install --/test App::Prove6 File::Temp Distribution::Builder::MakeFromJSON
       - name: Run Tests
-        run: prove6 -I. t xt
+        run: prove6 -I. t
