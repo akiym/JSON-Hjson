@@ -30,7 +30,7 @@ SEE ALSO
 
 [JSON::Tiny](JSON::Tiny)
 
-[https://hjson.org/rfc.html](https://hjson.org/rfc.html)
+[https://hjson.github.io/](https://hjson.github.io/)
 
 AUTHOR
 ======

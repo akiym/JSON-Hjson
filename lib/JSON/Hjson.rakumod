@@ -46,7 +46,7 @@ JSON::Hjson implements Human JSON (Hjson) in Raku grammar.
 
 L<JSON::Tiny>
 
-L<https://hjson.org/rfc.html>
+L<https://hjson.github.io/>
 
 =head1 AUTHOR
 
